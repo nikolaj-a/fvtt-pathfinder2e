@@ -1,0 +1,17 @@
+{
+  "name": "pathfinder2e",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Nikolaj Andresen <na@deck.dk>",
+  "license": "UNLICENSED",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=production"
+  },
+  "devDependencies": {
+    "ts-loader": "^8.0.0",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12"
+  }
+}
