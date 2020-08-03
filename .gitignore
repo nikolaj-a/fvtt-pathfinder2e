@@ -1,0 +1,11 @@
+# IDE project files
+/.idea/
+
+# Mac
+.DS_Store
+
+# Package management
+/node_modules/
+
+# build output
+/target/
