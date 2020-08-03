@@ -1,6 +1,13 @@
 const path = require('path');
+const {foundry} = require('./foundry.config');
 
 module.exports = (env, args) => {
+    // use output path from Foundry configuration in development mode
+    let outputPath = path.resolve(__dirname, 'target', 'web-assets');
+    if (args.mode === 'development') {
+        outputPath = path.resolve(foundry?.folders?.data, 'systems', 'pathfinder2e')
+    }
+
     return {
         entry: './src/main/typescript/index.ts',
         module: {
@@ -16,8 +23,8 @@ module.exports = (env, args) => {
             extensions: ['.ts'],
         },
         output: {
-            filename: 'pathfinder2.js',
-            path: path.resolve(__dirname, 'target', 'web-assets'),
+            filename: 'pathfinder2e.js',
+            path: outputPath,
         },
     };
 };

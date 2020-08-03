@@ -9,3 +9,6 @@
 
 # build output
 /target/
+
+# Foundry configuration used by development mode
+/foundry.config.js
