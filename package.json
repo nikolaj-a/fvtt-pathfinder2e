@@ -6,7 +6,8 @@
   "license": "UNLICENSED",
   "private": true,
   "scripts": {
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "start": "webpack --mode=development --watch"
   },
   "devDependencies": {
     "ts-loader": "^8.0.0",
