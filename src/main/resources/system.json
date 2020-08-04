@@ -1,0 +1,18 @@
+{
+  "name": "pathfinder2e",
+  "title": "Pathfinder Second Edition",
+  "description": "",
+  "version": "1.0.0",
+  "minimumCoreVersion": "0.6.5",
+  "compatibleCoreVersion": "0.6.5",
+  "templateVersion": 2,
+  "author": "Nikolaj Andresen <na@deck.dk>",
+  "esmodules": [
+    "scripts/pathfinder2e.js"
+  ],
+  "gridDistance": 5,
+  "gridUnits": "ft",
+  "url": "https://github.com/nikolaj-a/fvtt-pathfinder2e",
+  "manifest": "",
+  "download": ""
+}
