@@ -7,10 +7,14 @@
   "private": true,
   "scripts": {
     "build": "webpack --mode=production",
-    "start": "webpack --mode=development --watch"
+    "start": "webpack --mode=development --watch",
+    "lint": "eslint --ext .ts ./src/main/typescript"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^3.8.0",
+    "@typescript-eslint/parser": "^3.8.0",
     "copy-webpack-plugin": "^6.0.3",
+    "eslint": "^7.6.0",
     "ts-loader": "^8.0.0",
     "typescript": "^3.9.6",
     "webpack": "^4.43.0",
