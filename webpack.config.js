@@ -1,5 +1,7 @@
 const path = require('path');
 const {foundry} = require('./foundry.config');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+const WriteFilePlugin = require('write-file-webpack-plugin');
 
 module.exports = (env, args) => {
     // use output path from Foundry configuration in development mode
@@ -19,11 +21,19 @@ module.exports = (env, args) => {
                 },
             ],
         },
+        plugins: [
+            new CopyWebpackPlugin({
+                patterns: [
+                    {from: 'src/main/resources'}
+                ]
+            }),
+            new WriteFilePlugin()
+        ],
         resolve: {
             extensions: ['.ts'],
         },
         output: {
-            filename: 'pathfinder2e.js',
+            filename: path.join('scripts', 'pathfinder2e.js'),
             path: outputPath,
         },
     };
